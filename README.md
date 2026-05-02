@@ -2,6 +2,23 @@
 
 Файлы для публикации в Google Apps Script.
 
+## Архитектура
+
+```mermaid
+flowchart LR
+    A[User Sheet cell] -->|=GUARDLABS_PRICE| B[Code.gs]
+    B --> C[CacheService 60s]
+    C -->|cache miss| D[api.binance.com<br/>ticker/24hr]
+    D --> C
+    C --> A
+    E[onOpen menu] --> F[Sidebar.html<br/>UI panel]
+    F --> G[CTA links<br/>course / affiliate]
+    H[appsscript.json] -.-> B
+    H -.-> F
+```
+
+3 pure-JS функции + sidebar UI + onOpen menu. Никаких внешних зависимостей кроме `api.binance.com` (whitelisted в manifest).
+
 ## Что это
 
 Workspace Add-on для Google Sheets с 3 custom functions:
