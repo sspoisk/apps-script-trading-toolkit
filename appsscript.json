@@ -1,0 +1,27 @@
+{
+  "timeZone": "Europe/Berlin",
+  "runtimeVersion": "V8",
+  "exceptionLogging": "STACKDRIVER",
+  "urlFetchWhitelist": [
+    "https://api.binance.com/"
+  ],
+  "addOns": {
+    "common": {
+      "name": "GuardLabs Trading Toolkit",
+      "logoUrl": "https://guardlabs.online/static/img/logo-square.png",
+      "useLocaleFromApp": true,
+      "homepageTrigger": {
+        "runFunction": "onHomepage"
+      },
+      "openLinkUrlPrefixes": [
+        "https://guardlabs.online/",
+        "https://nexus-bot.pro/"
+      ]
+    },
+    "sheets": {
+      "homepageTrigger": {
+        "runFunction": "onHomepage"
+      }
+    }
+  }
+}

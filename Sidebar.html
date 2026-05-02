@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      body {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        padding: 16px;
+        font-family: sans-serif;
+        font-size: 13px;
+      }
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+        border-bottom: 1px solid #334155;
+        padding-bottom: 8px;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #94a3b8;
+        margin-top: 24px;
+      }
+      p {
+        margin: 4px 0 8px 0;
+      }
+      pre {
+        font-family: monospace;
+        background-color: #1e293b;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      .cta-container {
+        margin-top: 32px;
+        border-top: 1px solid #334155;
+        padding-top: 16px;
+      }
+      .cta-button {
+        display: block;
+        background-color: #22c55e;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: background-color 0.2s;
+      }
+      .cta-button:hover {
+        background-color: #16a34a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GuardLabs Trading Toolkit</h1>
+
+    <div class="section">
+      <h2>PRICE Function</h2>
+      <p>Get real-time crypto data from Binance.</p>
+      <pre>=GUARDLABS_PRICE("BTC", "p")</pre>
+    </div>
+
+    <div class="section">
+      <h2>RISK Function</h2>
+      <p>Calculate position size based on your risk.</p>
+      <pre>=GUARDLABS_RISK(1000, 1, 50000, 49000)</pre>
+    </div>
+
+    <div class="section">
+      <h2>GRID Function</h2>
+      <p>Generate price levels for grid strategies.</p>
+      <pre>=GUARDLABS_GRID(100, 200, 10)</pre>
+    </div>
+
+    <div class="cta-container">
+      <a href="https://nexus-bot.pro" target="_blank" class="cta-button">
+        Free course: build your own bot
+      </a>
+      <a href="https://guardlabs.online/partners?ref=appsscript" target="_blank" class="cta-button">
+        Affiliate program 30-50%
+      </a>
+    </div>
+
+  </body>
+</html>
